@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="anu" class="com.dependencyinjection.setter.Student">
+        <property name="name" value="Anu"></property>
+        <property name="id" value="1001"></property>
+    </bean>
+
+    <bean id="advik" class="com.dependencyinjection.setter.Student">
+        <property name="name" value="Advik"></property>
+        <property name="id" value="1002"></property>
+    </bean>
+
+    <bean id="anuCons" class="com.dependencyinjection.setter.Student">
+        <constructor-arg name="name" value="Sweety"></constructor-arg>
+        <constructor-arg name="id" value="1003"></constructor-arg>
+    </bean>
+</beans>
